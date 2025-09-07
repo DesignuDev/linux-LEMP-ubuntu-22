@@ -97,7 +97,7 @@ PHPINI="/etc/php/8.4/fpm/php.ini"
 sudo sed -i "s|^upload_max_filesize = .*|upload_max_filesize = 1G|" "$PHPINI"
 sudo sed -i "s|^post_max_size = .*|post_max_size = 1G|" "$PHPINI"
 
-udo sed -i "s|^max_execution_time = .*|max_execution_time = 300|" "$PHPINI"
+sudo sed -i "s|^max_execution_time = .*|max_execution_time = 300|" "$PHPINI"
 sudo sed -i "s|^memory_limit = .*|memory_limit = 1G|" "$PHPINI"
 
 # Test Nginx config, restart services
